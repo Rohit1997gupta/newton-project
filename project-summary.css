@@ -1,0 +1,167 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    /* align-items: flex-start;
+    margin: auto; */
+    font-size: 62.5%;
+  }
+  
+  body {
+    /* align-items: flex-start; */
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+     background: var(--pale-blue) url('../pattern-background-mobile.svg') center no-repeat; 
+     background-image:url('./pattern-background-desktop.svg');
+     background-repeat: no-repeat;
+  /* box-shadow: 2px 1px 5px; */
+     
+    background-size: 100%;
+    
+  }
+  
+  .container {
+    margin-top:40;
+    display: flex;
+    justify-content: center;
+     align-items: flex-start;
+  }
+  
+  .container .card-main {
+    /* align-items: flex-start; */
+    width: 88%;
+    max-width: 375px;
+    background-color: #fff;
+    margin-top: 4rem;
+    border-radius: 1.3rem;
+    box-shadow: 10px 10px 20px hsl(245, 75%, 52%, .1), 15px 15px 30px hsl(245, 75%, 52%, .1);
+  }
+  
+  
+  
+  .container .card-main .summary {
+     display: flex; 
+     flex-direction: column; 
+     justify-content: center; 
+     text-align: center; 
+     padding: 3rem; 
+  }
+  
+  .container .summary .title {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--dark-blue);
+  }
+  .container .card-main .image {
+    width: 100%;
+    border-radius: 1.3rem 1.3rem 0 0;
+  }
+  
+  .container .summary .sub-title {
+    font-size: 1.5rem;
+    color: var(--desaturated-blue);
+    font-weight: 500;
+    line-height: 2.5rem;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+  
+  .container .card-main .planning {
+    background-color: var(--very-pale-blue);
+    border-radius: 1rem;
+    width: 100%;
+    margin: 1rem 0;
+    /* padding: 1.5rem 1rem; */
+  }
+  
+  .container .card-main .planning .list {
+    display: flex;
+     flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+   gap: 25px; 
+  }
+  
+  .container .card-main .planning .plan {
+    color: var(--dark-blue);
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin-bottom: .2rem;
+  }
+  
+  .container .card-main .planning p {
+    color: var(--desaturated-blue);
+    font-size: 1.4rem;
+    font-weight: 700;
+    opacity: 0.8;
+  }
+  
+  .container .card-main .planning a {
+    color: var(--bright-blue);
+    font-weight: 900;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .container .card-main .planning a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  
+  .container .card-main .process .btn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    border-radius: 1rem;
+  }
+  
+  .primary {
+    background-color: var(--bright-blue);
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 1.3rem;
+    padding: 1.3rem 0;
+    box-shadow: 10px 10px 20px hsl(245, 75%, 52%, .1), 15px 15px 30px hsl(245, 75%, 52%, .1);
+  }
+  
+  .primary:hover {
+    opacity: .8;
+    cursor: pointer;
+  }
+  
+  .secondary2 {
+    background-color: transparent;
+    color: var(--desaturated-blue);
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 1.3rem 0;
+  }
+  
+  .secondary2:hover {
+    color: var(--dark-blue);
+    cursor: pointer;
+  }
+  
+  @media screen and (min-width: 1440px) {
+    body {
+        background: var(--pale-blue) url('../pattern-background-desktop.svg') center no-repeat; 
+    }
+  
+    .container {
+        align-items: center;
+    }
+  }
+  
